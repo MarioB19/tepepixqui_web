@@ -1,10 +1,18 @@
 // components/QuienesSomos.js
 
+import Image from "next/image";
+
 export default function QuienesSomos() {
     return (
       <section id="quienes-somos" className="min-h-screen p-8 bg-gray-100 dark:bg-gray-800">
         <div className="container mx-auto flex flex-col md:flex-row items-center">
-          <img src="/quienesSomos.png" alt="Community" className="w-full md:w-1/2 h-auto rounded-lg shadow-lg" />
+        <Image 
+  src="/quienesSomos.png" 
+  alt="Community" 
+  width={800} 
+  height={600} 
+  className="w-full md:w-1/2 h-auto rounded-lg shadow-lg" 
+/>
           <div className="mt-8 md:mt-0 md:ml-8 bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg w-full md:w-1/2">
             <h2 className="text-3xl font-bold mb-4 text-green-600 dark:text-green-400">Quiénes Somos</h2>
             <p className="text-gray-700 dark:text-gray-300 mb-4">
