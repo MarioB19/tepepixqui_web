@@ -75,10 +75,10 @@ export default function Mapa() {
 
   return (
     <section id="mapa" className="min-h-screen p-8 bg-gray-200 dark:bg-gray-700">
-      <div className="bg-white p-6 rounded-lg shadow-lg mb-8">
-        <h1 className="text-4xl font-bold text-center mb-4 text-gray-800">Mapa de Estaciones</h1>
-        <p className="text-lg text-gray-700 text-center">El proyecto Tepepixqui utiliza estaciones con sensores para detectar tempranamente incendios forestales. Cada estación monitorea temperatura, humedad, niveles de CO2, CO, humo y velocidad del viento, y tiene un área de cobertura de 5 km a la redonda.</p>
-      </div>
+    <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg mb-8">
+      <h1 className="text-4xl font-bold text-center mb-4 text-gray-800 dark:text-gray-200">Mapa de Estaciones</h1>
+      <p className="text-lg text-gray-700 dark:text-gray-300 text-center">El proyecto Tepepixqui utiliza estaciones con sensores para detectar tempranamente incendios forestales. Cada estación monitorea temperatura, humedad, niveles de CO2, CO, humo y velocidad del viento, y tiene un área de cobertura de 5 km a la redonda.</p>
+    </div>
       <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
         <GoogleMap
           mapContainerStyle={mapContainerStyle}
