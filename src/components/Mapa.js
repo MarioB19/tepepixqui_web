@@ -77,7 +77,7 @@ export default function Mapa() {
     <section id="mapa" className="min-h-screen p-8 bg-gray-200 dark:bg-gray-700">
     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg mb-8">
       <h1 className="text-4xl font-bold text-center mb-4 text-gray-800 dark:text-gray-200">Mapa de Estaciones</h1>
-      <p className="text-lg text-gray-700 dark:text-gray-300 text-center">El proyecto Tepepixqui utiliza estaciones con sensores para detectar tempranamente incendios forestales. Cada estación monitorea temperatura, humedad, niveles de CO2, CO, humo y velocidad del viento, y tiene un área de cobertura de 5 km a la redonda.</p>
+      <p className="text-lg text-gray-700 dark:text-gray-300 text-center">El proyecto Tepepixqui utiliza estaciones con sensores para detectar tempranamente incendios forestales. Cada estación monitorea temperatura, humedad, niveles de CO2, CO, humo y velocidad del viento, y tiene un área de cobertura de 1 km a la redonda.</p>
     </div>
       <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY}>
         <GoogleMap
@@ -100,7 +100,7 @@ export default function Mapa() {
             <Circle
               key={estacion.id}
               center={estacion.posicion}
-              radius={5000} // Radio de 1 km
+              radius={1000} // Radio de 1 km
               options={{
                 fillColor: 'rgba(135, 206, 250, 0.5)',
                 strokeColor: 'rgba(0, 0, 255, 0.7)',
